@@ -139,38 +139,33 @@ def create_superdict(paragraphs):
     return d
 
 
-def generate_tweets(d):
+def generate_text(d):
     """
-    Generates tweets using the given superdictionary.
+    Generates text using the given superdictionary.
     :param d: The superdictionary.
-    :return: A list of tweets.
+    :return: The generated text.
     """
-    tweets = []
-    for t in range(TWEETS_TO_GENERATE):
-        tweet = ""
-        lastWord = None
-        sentences = 0
+    text = ""
+    lastWord = None
+    sentences = 0
 
-        while len(tweet) < MAXIMUM_TWEET_LENGTH:
-            # choices = []
-            # for al in alias[superstrip(lastWord)]:
-            #     choices += d[al]
+    while len(text) < MAXIMUM_TWEET_LENGTH:
+        # choices = []
+        # for al in alias[superstrip(lastWord)]:
+        #     choices += d[al]
 
-            w = choose(d[lastWord])
-            lastWord = w
-            if w is None:
-                if chance(CHANCE_TO_EXIT_AFTER_SENTENCE_TERMINATES):
-                    break
-                tweet += " " if DOUBLE_SPACE_BETWEEN_SENTENCES else ""
-                sentences += 1
+        w = choose(d[lastWord])
+        lastWord = w
+        if w is None:
+            if chance(CHANCE_TO_EXIT_AFTER_SENTENCE_TERMINATES):
+                break
+            text += " " if DOUBLE_SPACE_BETWEEN_SENTENCES else ""
+            sentences += 1
+        else:
+            if len(text + w) > (MAXIMUM_TWEET_LENGTH - 3):
+                text = text[:-1] + "..."
+                break
             else:
-                if len(tweet + w) > (MAXIMUM_TWEET_LENGTH - 3):
-                    tweet = tweet[:-1] + "..."
-                    break
-                else:
-                    tweet += w + " "
-        print(tweet)
-        print()
-        tweets.append(tweet)
+                text += w + " "
 
-    return tweets
+    return text
