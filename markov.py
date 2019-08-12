@@ -51,12 +51,18 @@ def add_dict_entry(dictionary, key, value):
         dictionary[key] = [value]
 
 
-def superstrip(a):
-    if a is None:
+def superstrip(word, stripables=(".", "...", "?", "!", "(", ")", ",")):
+    """
+    Strips a word of all given strings.
+    :param word: The word to strip.
+    :param stripables: The sequence of strings to strip from the word.
+    :return: The word stripped of all stripables.
+    """
+    if word is None:
         return None
-    simple = a
-    for garbage in [".", "...", "?", "!", "(", ")", ","]:
-        simple = simple.replace(garbage, "")
+    simple = word
+    for stripable in stripables:
+        simple = simple.replace(stripable, "")
     return simple.lower()
 
 
