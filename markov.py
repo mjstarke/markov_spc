@@ -93,6 +93,17 @@ def read_paragraphs(fp, delete):
     return paragraphs
 
 
+def random_slice(l, size):
+    """
+    Picks a random slice out of the list with a given size.
+    :param l: The list from which to take a slice.
+    :param size: The size of the slice.
+    :return: A slice of the list.
+    """
+    first = randint(0, len(l) - size)
+    return l[first:first+size]
+
+
 def create_superdict(paragraphs):
     """
     Creates the superdictionary from the given paragraphs.
@@ -100,11 +111,8 @@ def create_superdict(paragraphs):
     :return: The superdictionary.
     """
     d = dict()
-    # alias = dict()
-    # null = False
-    firstPara = randint(0, len(paragraphs) - PARAGRAPHS_TO_USE)
 
-    for para in paragraphs[firstPara:(firstPara + PARAGRAPHS_TO_USE)]:
+    for para in paragraphs:
         words = para.split(" ")
         while True:
             try:
