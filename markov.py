@@ -2,13 +2,6 @@ from random import choice as choose
 from random import random as r
 from random import randint
 
-CHANCE_TO_EXIT_AFTER_SENTENCE_TERMINATES = randint(25, 50)
-DOUBLE_SPACE_BETWEEN_SENTENCES = True
-MAXIMUM_TWEET_LENGTH = randint(randint(150, 275), 280)
-PARAGRAPHS_TO_USE = randint(10, 30)
-STRINGS_TO_DELETE_FROM_CORPUS = ["\n", "SUMMARY...", "DISCUSSION..."]
-TWEETS_TO_GENERATE = 10
-
 
 def chance(c):
     """
@@ -139,30 +132,31 @@ def create_superdict(paragraphs):
     return d
 
 
-def generate_text(d):
+def generate_text(d, maximum_text_length=280, chance_to_exit_when_sentence_terminates=37.5,
+                  sentence_separator="  "):
     """
     Generates text using the given superdictionary.
     :param d: The superdictionary.
+    :param maximum_text_length: The maximum length the text may have.  Default 280.
+    :param chance_to_exit_when_sentence_terminates: The chance that the procedure exits after each sentence terminates.
+    Default 37.5.
+    :param sentence_separator: The text that is inserted when a sentence terminates.  Default '  ' (two whitespaces).
     :return: The generated text.
     """
     text = ""
     lastWord = None
     sentences = 0
 
-    while len(text) < MAXIMUM_TWEET_LENGTH:
-        # choices = []
-        # for al in alias[superstrip(lastWord)]:
-        #     choices += d[al]
-
+    while len(text) < maximum_text_length:
         w = choose(d[lastWord])
         lastWord = w
         if w is None:
-            if chance(CHANCE_TO_EXIT_AFTER_SENTENCE_TERMINATES):
+            if chance(chance_to_exit_when_sentence_terminates):
                 break
-            text += " " if DOUBLE_SPACE_BETWEEN_SENTENCES else ""
+            text += sentence_separator
             sentences += 1
         else:
-            if len(text + w) > (MAXIMUM_TWEET_LENGTH - 3):
+            if len(text + w) > (maximum_text_length - 3):
                 text = text[:-1] + "..."
                 break
             else:
