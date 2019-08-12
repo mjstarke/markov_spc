@@ -19,19 +19,21 @@ def chance(c):
     return c / 100. > r()
 
 
-def terminates_sentence(word):
+def terminates_sentence(word, terminators=("!", "?", "."), non_terminators=("...",)):
     """
     Determines whether or not the given word terminates the sentence.
     :param word: The word to test.
-    :return: True if the word terminates the sentence (ends in !, ?, or ., but not ...), and False otherwise.
+    :param terminators: A sequence of strings that terminate a sentence.
+    :param non_terminators: A sequence of strings that do not terminate a sentence.
+    :return: True if the word terminates the sentence.
     """
-    if word[-1] in ["!", "?"]:
-        return True
-    # Period terminates, but not ellipses.
-    elif word[-1] == ".":
-        return word[-2] != "."
-    else:
-        return False
+    for non_terminator in non_terminators:
+        if word.endswith(non_terminator):
+            return False
+
+    for terminator in terminators:
+        if word.endswith(terminator):
+            return True
 
 
 def add_dict_entry(dictionary, key, value):
