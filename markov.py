@@ -133,14 +133,14 @@ def create_superdict(paragraphs):
 
 
 def generate_text(d, maximum_text_length=280, chance_to_exit_when_sentence_terminates=0.375,
-                  sentence_separator="  "):
+                  sentence_separator=" "):
     """
     Generates text using the given superdictionary.
     :param d: The superdictionary.
     :param maximum_text_length: The maximum length the text may have.  Default 280.
     :param chance_to_exit_when_sentence_terminates: The chance that the procedure exits after each sentence terminates.
     Default 0.375 (37.5% chance).
-    :param sentence_separator: The text that is inserted when a sentence terminates.  Default '  ' (two whitespaces).
+    :param sentence_separator: The text that is inserted when a sentence terminates.  Default ' ' (one whitespace).
     :return: The generated text.
     """
     text = ""
