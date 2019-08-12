@@ -6,10 +6,10 @@ from random import randint
 def chance(c):
     """
     Returns True with the given probability, and False otherwise.
-    :param c: The chance to return True out of 100.
-    :return: True or False randomly.  Always True if c >= 100, and always False if c <= 0.
+    :param c: The chance to return True.
+    :return: True or False randomly.  Always True if c >= 1.0, and always False if c <= 0.0.
     """
-    return c / 100. > r()
+    return c > r()
 
 
 def terminates_sentence(word, terminators=("!", "?", "."), non_terminators=("...",)):
@@ -132,14 +132,14 @@ def create_superdict(paragraphs):
     return d
 
 
-def generate_text(d, maximum_text_length=280, chance_to_exit_when_sentence_terminates=37.5,
+def generate_text(d, maximum_text_length=280, chance_to_exit_when_sentence_terminates=0.375,
                   sentence_separator="  "):
     """
     Generates text using the given superdictionary.
     :param d: The superdictionary.
     :param maximum_text_length: The maximum length the text may have.  Default 280.
     :param chance_to_exit_when_sentence_terminates: The chance that the procedure exits after each sentence terminates.
-    Default 37.5.
+    Default 0.375 (37.5% chance).
     :param sentence_separator: The text that is inserted when a sentence terminates.  Default '  ' (two whitespaces).
     :return: The generated text.
     """
