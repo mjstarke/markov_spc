@@ -103,24 +103,31 @@ def create_superdict(paragraphs):
     :param paragraphs: The paragraphs.
     :return: The superdictionary.
     """
+    # Initialize the superdictionary.
     d = dict()
 
+    # For each paragraph...
     for para in paragraphs:
+        # Split the paragraph by space into words.
         words = para.split(" ")
+        # Remove blank "words" caused by double-spaces.
         words = [word for word in words if len(word) > 0]
 
         # First word succeeds null.
         add_dict_entry(d, None, words[0])
 
+        # For each word, except the last one...
         for w in range(len(words) - 1):
+            # Get the pair of words including this one and the next.
             a, b = words[w:w + 2]
+            # If the word terminates a sentence, then create entries that point the first word to null, and null to the
+            # second word.
             if terminates_sentence(a):
                 add_dict_entry(d, a, None)
                 add_dict_entry(d, None, b)
+            # Otherwise, just point the first word to the second word.
             else:
                 add_dict_entry(d, a, b)
-
-            # addAliasEntry(alias, a)
 
         # Last word preceeds null.
         add_dict_entry(d, words[-1], None)
