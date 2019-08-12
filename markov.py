@@ -107,11 +107,7 @@ def create_superdict(paragraphs):
 
     for para in paragraphs:
         words = para.split(" ")
-        while True:
-            try:
-                words.remove("")
-            except:
-                break
+        words = [word for word in words if len(word) > 0]
 
         # First word succeeds null.
         add_dict_entry(d, None, words[0])
