@@ -58,13 +58,19 @@ def superstrip(a):
     return simple.lower()
 
 
-def read_paragraphs(fp, ):
+def read_paragraphs(fp, delete):
+    """
+    Reads a text file as a sequence of paragraphs.
+    :param fp: The path to the text file.
+    :param delete: Strings that should be deleted from the text.
+    :return: A list of paragraphs from the text.
+    """
     paragraphs = []
 
-    with open("sample.txt") as f:
+    with open(fp) as f:
         thisParagraph = ""
         for line in f:
-            for term in STRINGS_TO_DELETE_FROM_CORPUS:
+            for term in delete:
                 line = line.replace(term, "")
 
             if len(line.strip()) == 0:
@@ -76,8 +82,15 @@ def read_paragraphs(fp, ):
             paragraphs.append(thisParagraph[:-1])
         f.close()
 
+    return paragraphs
+
 
 def create_superdict(paragraphs):
+    """
+    Creates the superdictionary from the given paragraphs.
+    :param paragraphs: The paragraphs.
+    :return: The superdictionary.
+    """
     d = dict()
     # alias = dict()
     # null = False
@@ -107,8 +120,15 @@ def create_superdict(paragraphs):
         # Last word preceeds null.
         add_dict_entry(d, words[-1], None)
 
+    return d
+
 
 def generate_tweets(d):
+    """
+    Generates tweets using the given superdictionary.
+    :param d: The superdictionary.
+    :return: A list of tweets.
+    """
     tweets = []
     for t in range(TWEETS_TO_GENERATE):
         tweet = ""
@@ -136,3 +156,5 @@ def generate_tweets(d):
         print(tweet)
         print()
         tweets.append(tweet)
+
+    return tweets
