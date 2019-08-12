@@ -1,0 +1,138 @@
+from random import choice as choose
+from random import random as r
+from random import randint
+
+CHANCE_TO_EXIT_AFTER_SENTENCE_TERMINATES = randint(25, 50)
+DOUBLE_SPACE_BETWEEN_SENTENCES = True
+MAXIMUM_TWEET_LENGTH = randint(randint(150, 275), 280)
+PARAGRAPHS_TO_USE = randint(10, 30)
+STRINGS_TO_DELETE_FROM_CORPUS = ["\n", "SUMMARY...", "DISCUSSION..."]
+TWEETS_TO_GENERATE = 10
+
+
+def chance(c):
+    """
+    Returns True with the given probability, and False otherwise.
+    :param c: The chance to return True out of 100.
+    :return: True or False randomly.  Always True if c >= 100, and always False if c <= 0.
+    """
+    return c / 100. > r()
+
+
+def terminates_sentence(word):
+    """
+    Determines whether or not the given word terminates the sentence.
+    :param word: The word to test.
+    :return: True if the word terminates the sentence (ends in !, ?, or ., but not ...), and False otherwise.
+    """
+    if word[-1] in ["!", "?"]:
+        return True
+    # Period terminates, but not ellipses.
+    elif word[-1] == ".":
+        return word[-2] != "."
+    else:
+        return False
+
+
+def add_dict_entry(dictionary, key, value):
+    """
+    Either initializes the given key in the given dictionary with a list containing the given value, or adds to the list
+    if it already exists.
+    :param dictionary: The dictionary to update.
+    :param key: The key to update.
+    :param value: The value to append.
+    :return: None.  The dictionary is modified in-place.
+    """
+    try:
+        dictionary[key].append(value)
+    except KeyError:
+        dictionary[key] = [value]
+
+
+def superstrip(a):
+    if a is None:
+        return None
+    simple = a
+    for garbage in [".", "...", "?", "!", "(", ")", ","]:
+        simple = simple.replace(garbage, "")
+    return simple.lower()
+
+
+def read_paragraphs(fp, ):
+    paragraphs = []
+
+    with open("sample.txt") as f:
+        thisParagraph = ""
+        for line in f:
+            for term in STRINGS_TO_DELETE_FROM_CORPUS:
+                line = line.replace(term, "")
+
+            if len(line.strip()) == 0:
+                paragraphs.append(thisParagraph[:-1])
+                thisParagraph = ""
+            else:
+                thisParagraph += line + " "
+        if len(thisParagraph.strip()) > 0:
+            paragraphs.append(thisParagraph[:-1])
+        f.close()
+
+
+def create_superdict(paragraphs):
+    d = dict()
+    # alias = dict()
+    # null = False
+    firstPara = randint(0, len(paragraphs) - PARAGRAPHS_TO_USE)
+
+    for para in paragraphs[firstPara:(firstPara + PARAGRAPHS_TO_USE)]:
+        words = para.split(" ")
+        while True:
+            try:
+                words.remove("")
+            except:
+                break
+
+        # First word succeeds null.
+        add_dict_entry(d, None, words[0])
+
+        for w in range(len(words) - 1):
+            a, b = words[w:w + 2]
+            if terminates_sentence(a):
+                add_dict_entry(d, a, None)
+                add_dict_entry(d, None, b)
+            else:
+                add_dict_entry(d, a, b)
+
+            # addAliasEntry(alias, a)
+
+        # Last word preceeds null.
+        add_dict_entry(d, words[-1], None)
+
+
+def generate_tweets(d):
+    tweets = []
+    for t in range(TWEETS_TO_GENERATE):
+        tweet = ""
+        lastWord = None
+        sentences = 0
+
+        while len(tweet) < MAXIMUM_TWEET_LENGTH:
+            # choices = []
+            # for al in alias[superstrip(lastWord)]:
+            #     choices += d[al]
+
+            w = choose(d[lastWord])
+            lastWord = w
+            if w is None:
+                if chance(CHANCE_TO_EXIT_AFTER_SENTENCE_TERMINATES):
+                    break
+                tweet += " " if DOUBLE_SPACE_BETWEEN_SENTENCES else ""
+                sentences += 1
+            else:
+                if len(tweet + w) > (MAXIMUM_TWEET_LENGTH - 3):
+                    tweet = tweet[:-1] + "..."
+                    break
+                else:
+                    tweet += w + " "
+        print(tweet)
+        print()
+        tweets.append(tweet)

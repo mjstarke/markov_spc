@@ -1,0 +1,292 @@
+SUMMARY...An isolated wind damage/tornado threat will continue for a
+few more hours from northwest Louisiana southwestward onto the
+middle and upper Texas Coastal Plain.
+
+DISCUSSION...Latest radar data shows a continuous line of strong
+thunderstorms located from northeast Texas southwestward into the
+southern Texas Hill Country. Moderate instability is located ahead
+of much of the squall-line which will help to keep a severe threat
+going for a few more hours. An isolated wind damage threat will
+exist with the more intense bowing segments within the line. In
+addition, the RAP is showing a 55 to 65 kt low-level jet ahead of
+the line which is creating strong low-level shear profiles. WSR-88D
+VWPs at Shreveport, LA and Houston, TX have strong speed shear in
+the lowest 1 KM AGL with looped hodographs above that. This
+low-level shear environment will be favorable for an isolated
+tornado threat with rotating cells that develop within the line.
+
+SUMMARY...Isolated downdraft-wind damage, and perhaps gusts locally
+near severe limits, still may occur over the Arklatex region before
+the line of thunderstorms moves over progressively more-stable air
+and weakens.
+
+DISCUSSION...Surface mesoanalysis shows a Pacific occluded/cold
+front extending from a low over northwestern OK across the DFW
+Metroplex to near SAT and Eagle Pass TX.  Ahead of that front, a
+quasi-linear convective system (QLCS) was moving eastward across the
+watch area near an MWT-TXK-ASL line southwestward to between
+CLL-UTS, and over the middle Texas Coastal Plain.  A warm front --
+denoting the northern rim of the Gulf/maritime-tropical air mass
+with relatively uninhibited, surface-based inflow parcels --
+intersected the QLCS near UTS, around Walker County TX, extending
+southward over the HOU metro and GLS area, then eastward across
+southeast TX/LA shelf waters.
+
+Modifications to both the 00Z SHV RAOB and RAP soundings indicate
+elevated buoyancy extending 150-250 nm northeast of the warm front,
+but over strengthening boundary-layer static stability.
+Accordingly, objective analyses and modified soundings reasonably
+show MLCINH around 100 J/kg in the LFK/OCH areas, increasing to over
+300 J/kg along I-20 and northward in the watch.  Elevated MUCAPE
+around 1000-1500 J/kg is evident within about 75 nm east of the line
+over AR, and near the TX/LA border farther south.  While slow
+increase in theta-e/buoyancy and decrease in CINH is expected in the
+boundary layer, as the warm front moves inland, the QLCS will
+outpace that process over AR and northwestern LA, resulting in a
+diminishing severe-wind threat eastward and with time in the
+Arklatex.  In the meantime, water-loaded downdrafts still may punch
+strong/damaging gusts to the surface in a few locales.
+
+SUMMARY...Coverage and intensity of snow is expected to increase
+over the discussion area through sunrise, with rates commonly 1-2
+inches per hour and locally higher.  Sporadic blizzard conditions
+also are possible.
+
+DISCUSSION...Surface mesoanalysis shows a well-defined frontal-wave
+cyclone with a low near the OK/KS border, south of DDC.  This low is
+forecast to migrate/re-develop northeastward along a cold front and
+across central/northern Kansas, reaching southeastern NE by 14Z.
+That will occur in response to the northeastward ejection of a
+strong mid/upper-level shortwave trough and embedded vorticity
+max/cyclone now evident in moisture-channel imagery over the
+northwestern TX Panhandle.  The associated deep-layer forcings --
+both in terms of elevated frontogenetic ascent and DCVA/cooling
+aloft -- will shift northeastward over the cold sector in step with
+the motion of the deep-layer cyclone.  This will help to maintain or
+increase precip over the next few hours across the OK Panhandle and
+through at least dawn over western KS, and intensify existing precip
+areas after about 09Z in southern NE.
+
+Favorably strong UVV is evident in planar progs throughout the
+dendritic-growth zones, likewise shifting northeastward across the
+discussion area.  Time series of forecast soundings accordingly show
+deep-columnar cooling of any remaining superfreezing layers to below
+freezing, with dynamically driven/large-scale cooling throughout the
+lower/middle troposphere and post-frontal cold advection in the
+boundary layer.  In addition, tight pressure/height gradients and
+vertical turbulent mixing will boost already near-blizzard
+gradient-wind conditions locally.
+
+SUMMARY...A band of strong/locally severe thunderstorms will
+continue to offer a threat for sporadic damaging gusts across parts
+of southeast Texas, and a tornado or two cannot be ruled out given
+the favorable environment.  A new watch may be needed before the 10Z
+expiration time of this one, to cover the potential eastward shift
+in severe potential across the Sabine River area.
+
+DISCUSSION...Surface mesoanalysis showed a warm front erratically
+winding across southeast Texas from south of LFK to between HOU-BPT,
+across the GLS area then eastward over LA shelf waters.  The
+relatively cold shelf waters are influencing surface temps between
+BPT-GLS and south of LCH.  However, a combination of warm advection
+over that shallow layer and vertical mixing should effectively
+re-form the warm front over the lower Sabine River region during the
+next few hours.  This process will expand the modified marine
+sector, with at least marginally surface-based effective-inflow
+parcels, eastward ahead of the QLCS described next.
+
+A well-developed QLCS was evident at 09Z from just west of ELD in
+southern AR southwestward across the SHV area to near UTS and the
+middle Texas Coastal Plain.  A newer line of convection has formed
+from its intersection with the original QLCS over eastern
+Fayette/Colorado Counties south-southwestward across Victoria
+County, with the QLCS weakening to its west.  The combined
+convective band is expected to continue moving eastward across and
+out of the remaining watch area, into a regime characterized by
+MLCAPE 1000-2000 J/kg.  MLCINH increase with eastward extent into LA
+but also should decrease with time, as the warm frontal zone
+repositions.  50-kt effective-shear vectors and large SRH, as
+sampled by VWP hodographs, will support severe potential in the
+QLCS, as well as with any relatively discrete/sustained cells that
+can be maintained to its southeast, closer to the coast.
+
+SUMMARY...The threat for occasional wind damage, and a tornado or
+two with embedded mesocirculations, will continue from a line of
+thunderstorms moving slowly eastward across the watch area.
+Additional watch issuance may be needed within the next few hours to
+its east, across more of Louisiana and perhaps southwestern
+Mississippi, as the air mass slowly destabilizes there.
+
+DISCUSSION...As of 13Z, the northern part of the primary QLCS was
+located in an area of elevated buoyancy and atop roughly 300 J/kg
+MLCINH over north-central LA, between RSN-MLU.  The complex extended
+southwestward into progressively weakening CINH and strengthening
+buoyancy, crossing the diffuse surface warm front in Vernon Parish,
+then extending across extreme southeast TX, becoming ragged/
+disorganized over Brazoria County.  Most of the TX part of the line
+appeared anafrontal, with outflow undercutting convective elements
+forming along the leading edge or crossing it from the warm sector.
+
+Until and unless deep, relatively discrete warm-sector development
+occurs and interacts with the warm-frontal zone, the QLCS will
+remain the dominant storm mode and severe concern.  The foregoing
+warm sector will destabilize slowly, as modest low/middle level
+lapse rates are modulated favorably by a combination of low-level
+warm advection and diffused diabatic surface heating.  This process
+should allow roughly 1000 J/kg MLCAPE to develop eastward across
+portions of southern/central LA through midday.  Meanwhile low-level
+and deep shear will remain favorable over the warm sector, with
+effective-shear magnitudes 50-55 kt.  Large low-level hodographs
+near the warm front, and beneath the roughly 60-70-kt southerly LLJ,
+will enable 300-500 J/kg effective SRH (locally higher).  Given the
+strong low-level shear, and despite generally unsupportive nature of
+both storm mode and leading-edge outflow behavior, isolated,
+transient, embedded mesocirculations may persist and strengthen long
+enough to offer a brief tornado threat.  Damaging gusts also remain
+possible.
+
+SUMMARY...Severe threat will progress across portions of the lower
+MS Valley this morning. Primary severe threat is locally damaging
+winds, although a tornado or two can not be ruled out.
+
+DISCUSSION...50-100mi wide band of strong/severe convection that
+evolved over TX has shifted into LA early this morning. This
+activity is sagging southeast at roughly 20kt with individual cells
+lifting more quickly northeast along the leading edge of this
+activity. Greatest buoyancy, more supportive of surface-based
+supercells, is currently located over southern LA, but adequate
+instability does extend into portions of southwest MS for
+potentially robust updrafts. Latest thinking is ongoing squall line,
+with embedded robust updrafts, will shift across the lower MS with
+an attendant wind threat. Greatest risk for tornadoes remains across
+LA where mid 60s surface dew points currently reside.
+
+SUMMARY...Strong convection should sag southeast across ww448 over
+the next few hours.
+
+DISCUSSION...Large-scale forcing for ascent is lifting well north of
+ww448 across the TN/OH Valley region. Trailing band of convection
+that stretches across eastern MS into southeast LA is increasingly
+detached from the short-wave trough that is ejecting across the
+Midwest. As LLJ refocuses north of the watch it appears lower MS
+Valley band of convection should gradually propagate southeast
+toward somewhat higher instability air mass located near the central
+Gulf coast. Even so, 18z sounding from LIX does not exhibit
+appreciable boundary-layer buoyancy; however, mid-level lapse rates
+are steep and substantial elevated cape does exist when lifting a
+parcel from 1km above the surface. Locally damaging winds appear to
+be the greatest risk with thunderstorms as they progress across the
+remainder of ww448.
+
+SUMMARY...Brief periods of heavy snow, with accumulations of up to 1
+inch/hr are possible over the next few hours. In addition, brief,
+isolated instances of blizzard conditions may also occur.
+
+DISCUSSION...A 996 mb surface low, currently located across
+north-central IA, is expected to continue moving off to the
+northeast for the next several hours, with little change in
+intensity forecast. A steady stream of 925-850 mb moisture continues
+to advect into the Mississippi valley region, where relatively
+strong 850 mb frontogenesis continues to support continued lift of
+these moist air parcels within a sub-freezing troposphere
+(especially from central MN, westward). While the dendritic growth
+zone across the discussion area is not particularly deep (i.e.
+700-900 m), near-saturation to saturated conditions in the 925-500
+mb layer with sub-freezing temps, combined with modest lift suggests
+that at least some brief heavy snow potential exists, including for
+snowfall rates of up to 1+ inches/hr.
+
+Blizzard conditions have also been reported along the western
+periphery of the low throughout the day, and with little change in
+surface low intensity and associated gradient wind expected,
+additional instances of blizzard conditions remain possible for at
+least the next few hours, especially in portions of eastern South
+Dakota.
+
+SUMMARY...Areas of heavy snow are expected across the area through
+the early morning hours. 1+ inch/hr rates are expected, with up to 2
+inch/hr rates possible in the higher elevations.
+
+DISCUSSION...An upper-level trough continues to deepen across the
+southwestern CONUS, with a 100+ knot 300 mb jet streak approaching
+the area from the west. Simultaneously, sfc-850 mb easterly cold air
+advection has been cooling low-level profiles, with temperatures
+quickly dropping below freezing at the surface. In addition, the
+westward moving boundary of the colder low-level airmass is
+fostering strong low-level convergence. Upper-level divergence
+associated with the left-exit region of the aforementioned jet
+streak overlapping areas of strong 925-850 mb frontogenesis is
+currently promoting very strong, deep-layer ascent.
+
+A relatively deep (800+ m), nearly saturated dendritic growth zone
+is present across these areas experiencing strong ascent, suggesting
+heavy snow potential will be a concern within the next few hours,
+through early morning. Latest ensemble model guidance also suggests
+heavy snow potential across central and eastern portions of New
+Mexico through sunrise, with 1+ inch/hr rates likely in the lower
+elevations and 2+ inch/hr rates in the higher terrain.
+
+SUMMARY...A wintry mix of precipitation, mainly in the form of
+freezing rain (accumulation rates around .05-.10 in/3 hrs) and
+sleet, is expected across the area through sunrise, before a
+transition to all rain occurs.
+
+DISCUSSION...An upper-level trough and associated surface cyclone
+will impinge on the area throughout the evening, with broad 30+ knot
+southwesterly flow in the 925-850 mb layer promoting very strong WAA
+into the early morning hours. Current RAP analysis soundings suggest
+subfreezing profiles are present across much of the upper Hudson
+Valley/New England area, with temperatures below freezing at the
+surface as indicated by observations.
+
+Recent KENX and KCXX dual-polarimetric radar data has shown
+relatively higher ZDR/lower CC signatures associated with
+precipitation currently falling across the area, suggesting a wintry
+mix of freezing rain and perhaps sleet is ongoing. As strong WAA
+continues across the region, temperatures aloft and at the surface
+are expected to encroach the freezing mark, transitioning wintry
+mixed precipitation to all rain, from portions of upstate New York
+during the early morning hours, to northern portions of New England
+after sunrise.
+
+SUMMARY...The potential for mesocyclones may maximize with
+quasi-discrete storms as they merge with the squall line.  A modest
+conditional risk for a brief/weak tornado and/or wind damage would
+likely focus with rotating convective structures.
+
+DISCUSSION...Recent surface analysis places a warm front over
+southwest AL extending east but arcing to the southeast towards
+Dothan.  South of the boundary, surface-based buoyancy (750-1000
+J/kg SBCAPE) will support updraft vigor in combination with
+low-level shear aiding in storm organization.  It seems a condition
+of a stronger/deeper and more persistent updraft (characterized by
+echo tops exceeding 30,000 ft) is needed to potentially acquire
+low-level rotation.  Yet, based on radar analysis during the past
+several hours, storm intensification may also need a favorable
+cold-pool-merging interaction between a quasi-discrete storm and the
+squall line.  Given the conditional environment is favorable for
+storm rotation but only one storm has realized this potential, will
+continue to monitor activity over the central Gulf Coast.
+
+SUMMARY...Isolated strong/gusty winds capable of producing mainly
+tree damage will be possible this afternoon. Watch issuance is not
+expected.
+
+DISCUSSION...A thin, broken line of convection over upstate SC at
+1815Z will move eastward into central SC and far south-central NC
+this afternoon. The airmass ahead of this line has become weakly
+unstable owing to modest diurnal heating and some steepening of
+near-surface lapse rates, with MLCAPE generally in the 500-1000 J/kg
+range. The movement of small clusters embedded within this line
+somewhat orthogonal to mid-level 50-60 kt southwesterly flow could
+encourage isolated strong/gusty downdraft winds to reach the surface
+through the afternoon. Radar data from KCAE indicates this
+potential, with 40-50 kt inbound velocities recently noted west of
+Columbia, SC. The VWP from KCAE shows low-level winds generally
+veered to southwesterly, but there is around 30-35 kt of speed shear
+in the 0-1 km layer that could possibly support weak low-level
+rotation within the convective line. Accordingly, a brief tornado
+cannot be completely ruled out. Still, the overall marginal
+thermodynamic environment (with poor mid-level lapse rates) will
+probably limit a greater severe threat, and watch issuance is not
+expected at this time.
