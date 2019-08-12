@@ -68,9 +68,9 @@ def superstrip(word, stripables=(".", "...", "?", "!", "(", ")", ",")):
 
 def read_paragraphs(fp, delete):
     """
-    Reads a text file as a sequence of paragraphs.
+    Reads a text file as a sequence of paragraphs.  Paragraphs are considered all text between two pairs of newlines.
     :param fp: The path to the text file.
-    :param delete: Strings that should be deleted from the text.
+    :param delete: A sequence of strings that should be deleted from the text.
     :return: A list of paragraphs from the text.
     """
     paragraphs = []
