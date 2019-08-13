@@ -59,11 +59,12 @@ def superstrip(word, stripables=(".", "...", "?", "!", "(", ")", ",")):
     return simple.lower()
 
 
-def read_paragraphs(fp, delete):
+def read_paragraphs(fp, delete=("\n", )):
     """
     Reads a text file as a sequence of paragraphs.  Paragraphs are considered all text between two pairs of newlines.
     :param fp: The path to the text file.
-    :param delete: A sequence of strings that should be deleted from the text.
+    :param delete: A sequence of strings that should be deleted from the text.  Default ('\n', ), which will remove all
+    newlines.
     :return: A list of paragraphs from the text.
     """
     paragraphs = []
