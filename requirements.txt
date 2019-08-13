@@ -3,3 +3,6 @@
 
 # spc.py: 1
 beautifulsoup4 == 4.7.1
+
+# spc.py: 2
+tqdm == 4.32.1
