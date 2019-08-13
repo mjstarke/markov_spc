@@ -18,8 +18,9 @@ def terminates_sentence(word: str, terminators: Iterable[str] = ("!", "?", "."),
     """
     Determines whether or not the given word terminates the sentence.
     :param word: The word to test.
-    :param terminators: A sequence of strings that terminate a sentence.
-    :param non_terminators: A sequence of strings that do not terminate a sentence.
+    :param terminators: A sequence of strings that terminate a sentence.  Default ("!", "?", ".").
+    :param non_terminators: A sequence of strings that do not terminate a sentence.  Default ("..."), which means that a
+    sentence ending in '...' does not terminate even though it ends in '.'.
     :return: True if the word terminates the sentence.
     """
     for non_terminator in non_terminators:
@@ -50,7 +51,7 @@ def superstrip(word: str, stripables: Iterable[str] = (".", "...", "?", "!", "("
     """
     Strips a word of all given strings.
     :param word: The word to strip.
-    :param stripables: The sequence of strings to strip from the word.
+    :param stripables: The sequence of strings to strip from the word.  Default (".", "...", "?", "!", "(", ")", ",").
     :return: The word stripped of all stripables.
     """
     if word is None:
@@ -63,7 +64,11 @@ def superstrip(word: str, stripables: Iterable[str] = (".", "...", "?", "!", "("
 
 def read_paragraphs(fp: str, delete: Iterable[str] = ("\n", )) -> List[str]:
     """
-    Reads a text file as a sequence of paragraphs.  Paragraphs are considered all text between two pairs of newlines.
+    Reads a text file as a sequence of paragraphs.  Paragraphs are considered all text between two pairs of newlines:
+        This begins paragraph 1.
+        This is also paragraph 1.
+
+        This begins paragraph 2.
     :param fp: The path to the text file.
     :param delete: A sequence of strings that should be deleted from the text.  Default ('\n', ), which will remove all
     newlines.
@@ -91,7 +96,8 @@ def read_paragraphs(fp: str, delete: Iterable[str] = ("\n", )) -> List[str]:
 
 def random_slice(l: list, size: int) -> list:
     """
-    Picks a random slice out of the list with a given size.
+    Picks a random slice out of the list with a given size.  For instance, random_slice([0,1,2,3], 2) could return
+    [0,1], [1,2], or [2,3].  All possible slices are equally likely.
     :param l: The list from which to take a slice.
     :param size: The size of the slice.
     :return: A slice of the list.
@@ -102,7 +108,17 @@ def random_slice(l: list, size: int) -> list:
 
 def create_superdict(paragraphs: List[str]):
     """
-    Creates the superdictionary from the given paragraphs.
+    Creates the superdictionary from the given paragraphs.  The superdictionary of a corpus of text has one key for each
+    word that appears at least once in the test.  Each key's value is a list of all words that can succeed the given
+    word.  For instance, the corpus 'I think, therefore I am.' would have the following superdictionary:
+    {
+        None: ["I"]
+        "I": ["think,", "am."]
+        "think,": ["therefore"]
+        "therefore": ["I"]
+        "am.": [None]
+    }
+    Note that None is used to indicate sentence termination.
     :param paragraphs: The paragraphs.
     :return: The superdictionary.
     """
@@ -142,8 +158,8 @@ def generate_text(d: Dict[str, List[str]], maximum_text_length: int = 280,
                   chance_to_exit_when_sentence_terminates: float = 0.375,
                   sentence_separator: str = " ", overflow_indicator: str = "...") -> str:
     """
-    Generates text using the given superdictionary.
-    :param d: The superdictionary.
+    Generates text using the given superdictionary.  See create_superdict().
+    :param d: The superdictionary.  See create_superdict().
     :param maximum_text_length: The maximum length the text may have.  Default 280.
     :param chance_to_exit_when_sentence_terminates: The chance that the procedure exits after each sentence terminates.
     Default 0.375 (37.5% chance).
