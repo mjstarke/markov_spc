@@ -1,9 +1,10 @@
 from random import choice as choose
 from random import random as r
 from random import randint
+from typing import *
 
 
-def chance(c):
+def chance(c: float) -> bool:
     """
     Returns True with the given probability, and False otherwise.
     :param c: The chance to return True.
@@ -12,7 +13,8 @@ def chance(c):
     return c > r()
 
 
-def terminates_sentence(word, terminators=("!", "?", "."), non_terminators=("...",)):
+def terminates_sentence(word: str, terminators: Iterable[str] = ("!", "?", "."),
+                        non_terminators: Iterable[str] = ("...",)) -> bool:
     """
     Determines whether or not the given word terminates the sentence.
     :param word: The word to test.
@@ -29,7 +31,7 @@ def terminates_sentence(word, terminators=("!", "?", "."), non_terminators=("...
             return True
 
 
-def add_dict_entry(dictionary, key, value):
+def add_dict_entry(dictionary: dict, key: Any, value: Any) -> None:
     """
     Either initializes the given key in the given dictionary with a list containing the given value, or adds to the list
     if it already exists.
@@ -44,7 +46,7 @@ def add_dict_entry(dictionary, key, value):
         dictionary[key] = [value]
 
 
-def superstrip(word, stripables=(".", "...", "?", "!", "(", ")", ",")):
+def superstrip(word: str, stripables: Iterable[str] = (".", "...", "?", "!", "(", ")", ",")) -> Optional[str]:
     """
     Strips a word of all given strings.
     :param word: The word to strip.
@@ -59,7 +61,7 @@ def superstrip(word, stripables=(".", "...", "?", "!", "(", ")", ",")):
     return simple.lower()
 
 
-def read_paragraphs(fp, delete=("\n", )):
+def read_paragraphs(fp: str, delete: Iterable[str] = ("\n", )) -> List[str]:
     """
     Reads a text file as a sequence of paragraphs.  Paragraphs are considered all text between two pairs of newlines.
     :param fp: The path to the text file.
@@ -87,7 +89,7 @@ def read_paragraphs(fp, delete=("\n", )):
     return paragraphs
 
 
-def random_slice(l, size):
+def random_slice(l: list, size: int) -> list:
     """
     Picks a random slice out of the list with a given size.
     :param l: The list from which to take a slice.
@@ -98,7 +100,7 @@ def random_slice(l, size):
     return l[first:first+size]
 
 
-def create_superdict(paragraphs):
+def create_superdict(paragraphs: List[str]):
     """
     Creates the superdictionary from the given paragraphs.
     :param paragraphs: The paragraphs.
@@ -136,8 +138,9 @@ def create_superdict(paragraphs):
     return d
 
 
-def generate_text(d, maximum_text_length=280, chance_to_exit_when_sentence_terminates=0.375,
-                  sentence_separator=" ", overflow_indicator="..."):
+def generate_text(d: Dict[str, List[str]], maximum_text_length: int = 280,
+                  chance_to_exit_when_sentence_terminates: float = 0.375,
+                  sentence_separator: str = " ", overflow_indicator: str = "...") -> str:
     """
     Generates text using the given superdictionary.
     :param d: The superdictionary.
